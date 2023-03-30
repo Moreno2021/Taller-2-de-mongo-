@@ -1,0 +1,97 @@
+//usuarios
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "ba",
+    "apellido": "ptz",
+    "identificacion":1040765004 ,
+    "edad": 4,
+    "email":"baptzz@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+GET http://localhost:3000/api/users/6417951b92dc07635208e078 HTTP/1.1
+
+###
+PUT  http://localhost:3000/api/users/c HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Marzela",
+    "apellido": "Rosas",
+    "identificacion": 25186108533,
+    "edad": 28,
+    "email":"marzerosas@gmail.com"
+}
+
+###
+DELETE  http://localhost:3000/api/users/6417951b92dc07635208e078 HTTP/1.1
+
+//jugadores
+###
+POST http://localhost:3000/api/futbolistas HTTP/1.1
+Content-Type: application/json
+
+{
+"Nombre": "Manuel Neuer",
+"Edad": 36,
+"Equipo_actual": "Bayern de Múnich",
+"Posicion": "portero"
+}
+
+###
+GET http://localhost:3000/api/futbolistas HTTP/1.1
+
+###
+GET http://localhost:3000/api/futbolistas/6420dbe5269187b53f4875e7 HTTP/1.1
+
+###
+PUT  http://localhost:3000/api/futbolistas/6420db7b18cac6a052ac337d HTTP/1.1
+Content-Type: application/json
+
+{
+    "Nombre": "Luis Diaz",
+    "Edad": 28,
+    "Equipo_actual": "Liver Pool",
+    "Posicion": "Lateral Derecho"
+}
+
+###
+DELETE  http://localhost:3000/api/futbolistas/6420dbe5269187b53f4875e7 HTTP/1.1
+
+//equipos
+###
+POST http://localhost:3000/api/equipos HTTP/1.1
+Content-Type: application/json
+
+{
+    "Nombre": "Independiente Medelli",
+    "Año": 1942,
+    "Estadio": "Atanacio girardot",
+    "Pais": "Colombia"
+}
+
+###
+GET http://localhost:3000/api/equipos HTTP/1.1
+
+###
+GET http://localhost:3000/api/equipos/6420b880517f8331a6d741bd HTTP/1.1
+
+###
+PUT  http://localhost:3000/api/equipos/6420b880517f8331a6d741bd HTTP/1.1
+Content-Type: application/json
+
+{
+    "Nombre": "Independiente Medellin",
+    "Año": 1942,
+    "Estadio": "Atanacio Girardot",
+    "Pais": "Colombia"
+}
+
+###
+DELETE  http://localhost:3000/api/equipos/6420b880517f8331a6d741bd HTTP/1.1
